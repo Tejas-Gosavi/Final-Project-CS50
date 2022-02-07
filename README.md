@@ -69,7 +69,7 @@
  - Frontend - Refer to this [link](./frontend/README.md).
 
 After installing all dependencies follow these steps. 
-1. Open CMD go to /backend dir. of this project and run following command.
+1. Open CMD goto /backend dir. of this project and run following command.
       
     ```
     flask run
