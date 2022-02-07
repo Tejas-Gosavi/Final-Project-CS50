@@ -24,7 +24,7 @@ export default {
 		return {
 			text: "",
 			displayResults: false,
-			result: {"abc": 80},
+			result: {},
 		};
 	},
 	methods: {
@@ -34,14 +34,14 @@ export default {
 			} else {
 				document.getElementById("textarea").classList.remove("errText");
 				this.$data.displayResults = true;
-				// const requestOptions = {
-				// 	method: "POST",
-				// 	headers: { "Content-Type": "application/json" },
-				// 	body: JSON.stringify({ text: this.$data.text })
-				// };
-				// fetch("http://127.0.0.1:5000", requestOptions)
-				// 	.then(response => response.json())
-				// 	.then(data => (this.$data.result = data.Results));
+				const requestOptions = {
+					method: "POST",
+					headers: { "Content-Type": "application/json" },
+					body: JSON.stringify({ text: this.$data.text })
+				};
+				fetch("http://127.0.0.1:5000", requestOptions)
+					.then(response => response.json())
+					.then(data => (this.$data.result = data.Results));
 			}
 		}
 	}
