@@ -29,7 +29,7 @@
 ## About The Project
 <div id="about-the-project">
 
-![](screenshots/screenshot1.png)
+![](Screenshots/Screenshot1.png)
 
 * Developed text classifier to classify title/description of News in certain categories.
 * Computed and visualized probability of every category
